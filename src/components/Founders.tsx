@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Linkedin, Mail } from "lucide-react";
 import chrisRobinson from "@/assets/chris-robinson.jpg";
-import geoffreyErasmus from "@/assets/geoffrey-erasmus.jpg";
+import geoffreyErasmus from "@/assets/geouffrey-erasmus.jpg";
 
 export const Founders = () => {
   const founders = [
@@ -20,10 +20,10 @@ export const Founders = () => {
       email: "chris@aigurus.com"
     },
     {
-      name: "Geoffrey Erasmus",
+      name: "Geouffrey Erasmus",
       title: "Co-Founder & CTO",
       image: geoffreyErasmus,
-      bio: "Technology expert with over 20 years of experience in software development, leading technical teams, and delivering enterprise solutions. As CTO of Creovai UK Ltd (formerly Awaken Intelligence), Geoffrey has driven product innovation and technical excellence across development, infrastructure, and customer delivery. His extensive background spans major financial institutions and Fortune 500 companies, with deep expertise in business intelligence, data warehousing, and AI-driven automation solutions.",
+      bio: "Technology expert with over 20 years of experience in software development, leading technical teams, and delivering enterprise solutions. As CTO of Creovai UK Ltd (formerly Awaken Intelligence), Geouffrey has driven product innovation and technical excellence across development, infrastructure, and customer delivery. His extensive background spans major financial institutions and Fortune 500 companies, with deep expertise in business intelligence, data warehousing, and AI-driven automation solutions.",
       expertise: [
         "Enterprise Software Architecture",
         "AI & Business Intelligence",
