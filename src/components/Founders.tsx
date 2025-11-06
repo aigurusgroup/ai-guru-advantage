@@ -23,15 +23,15 @@ export const Founders = () => {
       name: "Geoffrey Erasmus",
       title: "Co-Founder & CTO",
       image: geoffreyErasmus,
-      bio: "Geoffrey is a pioneering AI strategist with 15+ years of experience implementing enterprise AI solutions. He has led AI transformation initiatives for Fortune 500 companies, specializing in machine learning, process automation, and intelligent systems integration. His innovative approach has helped businesses achieve 40-60% efficiency gains through strategic AI deployment.",
+      bio: "Technology expert with over 20 years of experience in software development, leading technical teams, and delivering enterprise solutions. As CTO of Creovai UK Ltd (formerly Awaken Intelligence), Geoffrey has driven product innovation and technical excellence across development, infrastructure, and customer delivery. His extensive background spans major financial institutions and Fortune 500 companies, with deep expertise in business intelligence, data warehousing, and AI-driven automation solutions.",
       expertise: [
-        "AI Strategy & Implementation",
-        "Machine Learning & Automation",
-        "Digital Transformation",
-        "Technology Integration"
+        "Enterprise Software Architecture",
+        "AI & Business Intelligence",
+        "Technical Team Leadership",
+        "Data Engineering & Analytics"
       ],
       linkedin: "#",
-      email: "geoffrey@aigurus.com"
+      email: "geouffrey@creovai.com"
     }
   ];
 
