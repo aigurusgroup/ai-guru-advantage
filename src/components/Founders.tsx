@@ -7,16 +7,16 @@ export const Founders = () => {
   const founders = [
     {
       name: "Chris Robinson",
-      title: "Co-Founder & CEO",
+      title: "Founder & CEO",
       image: chrisRobinson,
-      bio: "Chris brings over 20 years of experience in strategic business acquisitions and mergers. With a proven track record of identifying undervalued businesses and transforming them into market leaders, he has successfully led 15+ acquisitions across various industries. His expertise in operational restructuring and value creation has generated over $500M in cumulative value for investors.",
+      bio: "Entrepreneur, founder, and investor with a track record of building, scaling, and exiting technology-driven businesses. With 11 successful ventures across software, AI, and customer-experience technology, including the 2025 merger of Creovai Inc with Capacity AI (USA), Chris combines deep operational expertise with cutting-edge AI innovation. At Creovai, he built award-winning conversational analytics and real-time guidance solutions that transformed customer engagement for enterprises worldwide.",
       expertise: [
-        "M&A Strategy & Execution",
-        "Business Transformation",
-        "Value Creation & Growth",
-        "Operational Excellence"
+        "Technology Ventures & Exits",
+        "AI & Automation Strategy",
+        "Business Acquisition & Integration",
+        "Operational Transformation"
       ],
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/chris-robinson-979940b/",
       email: "chris@aigurus.com"
     },
     {
