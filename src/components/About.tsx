@@ -16,9 +16,9 @@ export const About = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <Card className="p-8 text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-              <Eye className="w-8 h-8 text-primary" />
+          <Card className="p-8 text-center border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
+              <Eye className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -27,9 +27,9 @@ export const About = () => {
             </p>
           </Card>
 
-          <Card className="p-8 text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-secondary/10 flex items-center justify-center">
-              <Target className="w-8 h-8 text-secondary" />
+          <Card className="p-8 text-center border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center">
+              <Target className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -38,9 +38,9 @@ export const About = () => {
             </p>
           </Card>
 
-          <Card className="p-8 text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
-              <Zap className="w-8 h-8 text-accent" />
+          <Card className="p-8 text-center border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center">
+              <Zap className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">Approach</h3>
             <p className="text-muted-foreground leading-relaxed">

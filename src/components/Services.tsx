@@ -65,10 +65,10 @@ export const Services = () => {
           {services.map((service) => (
             <Card 
               key={service.title}
-              className="p-8 hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1"
+              className="p-8 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1 bg-card"
             >
-              <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center mb-6">
-                <service.icon className="w-7 h-7 text-primary-foreground" />
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary via-primary-glow to-accent flex items-center justify-center mb-6">
+                <service.icon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 {service.title}
@@ -82,7 +82,7 @@ export const Services = () => {
                     key={highlight}
                     className="flex items-start gap-2 text-sm text-muted-foreground"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-glow mt-2 flex-shrink-0" />
                     <span>{highlight}</span>
                   </li>
                 ))}

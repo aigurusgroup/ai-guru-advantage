@@ -1,40 +1,51 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-secondary/90" />
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+      {/* Circuit board pattern background */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle cx="10" cy="10" r="2" fill="currentColor" className="text-primary"/>
+              <circle cx="90" cy="90" r="2" fill="currentColor" className="text-accent"/>
+              <path d="M10 10 L30 10 L30 30 M70 70 L90 70 L90 90 M30 70 L50 70 L50 50 L70 50" 
+                    stroke="currentColor" strokeWidth="1" fill="none" className="text-primary-glow"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#circuit)"/>
+        </svg>
+      </div>
+
+      {/* Large logo watermark */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 z-0 opacity-[0.08] pointer-events-none">
+        <img 
+          src={logo} 
+          alt="" 
+          className="w-[800px] h-auto"
+        />
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div className="max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Transforming Businesses Through{" "}
-            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-              AI Innovation
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+            Innovation. Acquisition.{" "}
+            <span className="bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
+              Growth.
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
             Strategic acquisitions combined with cutting-edge AI implementation. 
             We identify, acquire, and transform businesses for exponential growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               size="lg" 
-              variant="hero"
-              className="text-lg group"
+              className="text-lg group bg-primary-glow hover:bg-primary-glow/90"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
@@ -43,7 +54,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="text-lg bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm"
+              className="text-lg border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Learn More
@@ -54,8 +65,8 @@ export const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-white/50 rounded-full" />
+        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex items-start justify-center p-2">
+          <div className="w-1.5 h-3 bg-primary-glow/50 rounded-full" />
         </div>
       </div>
     </section>

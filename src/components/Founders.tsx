@@ -36,7 +36,7 @@ export const Founders = () => {
   ];
 
   return (
-    <section id="founders" className="py-24 bg-muted/30">
+    <section id="founders" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
@@ -49,7 +49,7 @@ export const Founders = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {founders.map((founder) => (
-            <Card key={founder.name} className="overflow-hidden hover:shadow-[var(--shadow-strong)] transition-all duration-300">
+            <Card key={founder.name} className="overflow-hidden border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-strong)] transition-all duration-300">
               <div className="aspect-square relative overflow-hidden">
                 <img 
                   src={founder.image} 
@@ -61,7 +61,7 @@ export const Founders = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   {founder.name}
                 </h3>
-                <p className="text-secondary font-semibold mb-4">
+                <p className="text-primary-glow font-semibold mb-4">
                   {founder.title}
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -74,7 +74,7 @@ export const Founders = () => {
                     {founder.expertise.map((skill) => (
                       <span 
                         key={skill}
-                        className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                        className="px-3 py-1 bg-gradient-to-r from-primary/10 to-primary-glow/10 text-primary border border-primary/20 text-sm rounded-full"
                       >
                         {skill}
                       </span>
@@ -85,14 +85,14 @@ export const Founders = () => {
                 <div className="flex gap-4 pt-4 border-t border-border">
                   <a 
                     href={founder.linkedin}
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary-glow transition-colors"
                   >
                     <Linkedin className="w-5 h-5" />
                     <span className="text-sm">LinkedIn</span>
                   </a>
                   <a 
                     href={`mailto:${founder.email}`}
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary-glow transition-colors"
                   >
                     <Mail className="w-5 h-5" />
                     <span className="text-sm">Email</span>
