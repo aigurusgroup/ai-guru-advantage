@@ -37,7 +37,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img alt="AI Gurus - The Acquisition & Investment People" className="h-16 w-auto" src="/lovable-uploads/7ba8283c-63a5-444c-bdef-01018a600c24.png" />
+            <img alt="AI Gurus - The Acquisition & Investment People" className="h-16 w-auto" src={logo} />
           </div>
 
           {/* Desktop Navigation */}
