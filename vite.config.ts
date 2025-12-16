@@ -3,7 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-const basePath = process.env.VITE_BASE_URL || (process.env.NODE_ENV === 'production' ? '/ai-guru-advantage/' : '/')
+// Default to '/' for Lovable AI and local development
+// Set VITE_BASE_URL=/ai-guru-advantage/ for GitHub Pages deployment
+const basePath = process.env.VITE_BASE_URL || '/'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
