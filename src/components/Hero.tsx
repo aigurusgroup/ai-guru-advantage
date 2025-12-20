@@ -33,14 +33,13 @@ export const Hero = () => {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div className="max-w-4xl">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Innovation. Acquisition.{" "}
+            Acquisition. Investment. Innovation.{" "}
             <span className="bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
               Growth.
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-            Strategic acquisitions combined with cutting-edge AI implementation. 
-            We identify, acquire, and transform businesses for exponential growth.
+            Founder-led. Operator mindset. Confidential. Quick Decision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
