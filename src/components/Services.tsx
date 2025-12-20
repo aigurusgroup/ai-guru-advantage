@@ -5,46 +5,46 @@ export const Services = () => {
   const services = [
     {
       icon: Building2,
-      title: "Strategic Acquisitions",
-      description: "We identify and acquire businesses with strong fundamentals but unrealized potential. Our due diligence process focuses on operational efficiency opportunities and AI integration possibilities.",
+      title: "Acquisitions",
+      description: "We acquire businesses with strong fundamentals and clear upside.",
       highlights: [
-        "Target identification & analysis",
-        "Comprehensive due diligence",
-        "Negotiation & deal structuring",
-        "Post-acquisition integration"
+        "Target identification & assessment",
+        "Due diligence (commercial, financial, operational)",
+        "Deal structuring (flexible outcomes)",
+        "Integration planning and transition support"
       ]
     },
     {
       icon: Bot,
-      title: "AI Implementation",
-      description: "Systematic deployment of AI solutions across all business functions. We automate processes, optimize operations, and create intelligent systems that scale efficiently.",
+      title: "AI & Automation Implementation",
+      description: "We implement AI where it drives real outcomes: speed, accuracy, customer experience, and scalability.",
       highlights: [
-        "Process automation & optimization",
-        "Machine learning integration",
-        "Intelligent decision systems",
-        "Custom AI solution development"
+        "Workflow automation & operational optimisation",
+        "Intelligent reporting and decision support",
+        "AI-enabled customer and team tools",
+        "Data foundations (clean inputs → reliable outputs)"
       ]
     },
     {
       icon: TrendingUp,
-      title: "Business Transformation",
-      description: "Complete operational overhaul focused on efficiency and growth. We restructure workflows, implement best practices, and build scalable systems for sustainable success.",
+      title: "Operational Transformation",
+      description: "We upgrade the operating system of the business.",
       highlights: [
-        "Operational restructuring",
-        "Workflow optimization",
-        "Performance metrics & KPIs",
-        "Scalable growth strategies"
+        "Process redesign & standardisation",
+        "KPI dashboards & performance cadence",
+        "Role clarity, accountability, and training",
+        "Scalable systems and documentation"
       ]
     },
     {
       icon: Lightbulb,
-      title: "Value Creation",
-      description: "Drive exponential value through strategic improvements and technology adoption. Our approach combines business acumen with technological innovation for maximum ROI.",
+      title: "Value Creation & Growth",
+      description: "We grow value through disciplined execution.",
       highlights: [
-        "Revenue optimization",
-        "Cost reduction strategies",
-        "Market expansion",
-        "Exit strategy development"
+        "Revenue improvement and conversion uplift",
+        "Cost-to-serve reduction",
+        "Customer experience enhancements",
+        "Long-term growth plan (and optional exit planning)"
       ]
     }
   ];
@@ -54,10 +54,13 @@ export const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            What We Do
+            Our Capabilities
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            End-to-end business transformation through strategic acquisition and AI integration
+            Acquire. Improve. Scale.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+            We combine strategic acquisition with systematic AI integration to unlock efficiency, customer experience improvements, and sustainable growth.
           </p>
         </div>
 
