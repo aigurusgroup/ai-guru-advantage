@@ -12,8 +12,7 @@ export const Contact = () => {
               Let's Transform Your Business
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Whether you're an investor looking for opportunities or a business owner interested in strategic partnership, 
-              we'd love to hear from you.
+              Whether you're a business owner considering succession or an investor/partner exploring opportunities, we'd love to hear from you.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
