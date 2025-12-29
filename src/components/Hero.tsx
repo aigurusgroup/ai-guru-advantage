@@ -41,7 +41,7 @@ export const Hero = () => {
           <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
             Founder-led. Operator mindset. Confidential. Quick Decision.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
             <Button 
               size="lg" 
               className="text-lg group bg-primary-glow hover:bg-primary-glow/90"
@@ -54,9 +54,17 @@ export const Hero = () => {
               size="lg" 
               variant="outline"
               className="text-lg border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('what-we-acquire')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Learn More
+              What We Look For
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="text-lg border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+              onClick={() => document.getElementById('why-owners-choose')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Why Choose Us
             </Button>
           </div>
         </div>
