@@ -64,18 +64,29 @@ export const About = () => {
           </Card>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex justify-center items-center gap-2 md:gap-4">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group p-4 rounded-xl bg-muted/50 hover:bg-primary/10 transition-all duration-300 text-center"
+                className="group relative w-14 md:w-20 h-48 md:h-64 rounded-2xl bg-gradient-to-br from-primary via-primary-glow to-accent cursor-pointer transition-all duration-500 ease-out hover:w-48 md:hover:w-72 shadow-lg hover:shadow-[var(--shadow-glow)] overflow-hidden"
+                style={{
+                  transform: `rotate(${(index - 2.5) * 3}deg)`,
+                }}
               >
-                <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                  <span className="text-xl font-bold text-white">{value.letter}</span>
+                {/* Collapsed state - just the letter */}
+                <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300">
+                  <span className="text-3xl md:text-4xl font-bold text-white rotate-0">{value.letter}</span>
                 </div>
-                <h4 className="font-semibold text-foreground mb-1">{value.word}</h4>
-                <p className="text-xs text-muted-foreground leading-snug">{value.description}</p>
+                
+                {/* Expanded state - full content */}
+                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-3xl md:text-4xl font-bold text-white">{value.letter}</span>
+                    <span className="text-xl md:text-2xl font-semibold text-white/90">{value.word}</span>
+                  </div>
+                  <p className="text-sm md:text-base text-white/80 leading-relaxed">{value.description}</p>
+                </div>
               </div>
             ))}
           </div>
