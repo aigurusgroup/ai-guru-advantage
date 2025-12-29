@@ -3,13 +3,10 @@ import { Card } from "@/components/ui/card";
 
 export const WhatWeAcquire = () => {
   const businessCriteria = [
-    "Established trading history (a business with proven demand)",
-    "Consistent profitability and healthy cash generation",
+    "Proven demand and trading history",
+    "Consistent profitability and healthy cash flow",
     "Strong reputation and loyal customers",
-    "A capable team (or the potential to strengthen leadership)",
-    "Repeat/recurring revenue or dependable demand patterns",
-    "Clear opportunities to improve systems and reduce operational friction",
-    "A founder considering succession (full exit, partial exit, or phased transition)"
+    "Repeat/recurring revenue or dependable demand"
   ];
 
   const successionOptions = [
@@ -30,10 +27,7 @@ export const WhatWeAcquire = () => {
             Thinking about selling your business?
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            If you're searching for "sell my business", exploring succession planning, or looking for a business acquisition company in the UK, you're in the right place.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-            AI Gurus Group acquires established, profitable SMEs and strengthens them with practical AI, automation, and modern operating systems. We're a long-term buyer with an operator mindset - focused on continuity, culture, and sustainable growth.
+            AI Gurus Group acquires established, profitable SMEs and strengthens them with practical AI, automation, and modern operating systems.
           </p>
         </div>
 
@@ -49,19 +43,19 @@ export const WhatWeAcquire = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               We're interested in SME acquisitions where the business has strong fundamentals and a willing seller. A great fit often includes:
             </p>
-            <ul className="space-y-2 mb-6">
+            <ul className="space-y-3 mb-6">
               {businessCriteria.map((criterion) => (
                 <li 
                   key={criterion}
-                  className="flex items-start gap-2 text-sm text-muted-foreground"
+                  className="flex items-start gap-3 text-muted-foreground"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary-glow mt-2 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-primary-glow mt-0.5 flex-shrink-0" />
                   <span>{criterion}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-muted-foreground italic">
-              If you're unsure, we'd still encourage a confidential conversation - many strong businesses don't look "perfect on paper".
+            <p className="text-muted-foreground leading-relaxed italic">
+              If you're unsure, still reach out — many great businesses aren't "perfect on paper".
             </p>
           </Card>
 
