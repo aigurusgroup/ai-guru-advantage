@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const WhyOwnersChoose = () => {
   return (
-    <section id="why-owners-choose" className="py-24 bg-muted/30">
+    <section id="why-owners-choose" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="flex flex-wrap justify-center gap-4 mb-8">
