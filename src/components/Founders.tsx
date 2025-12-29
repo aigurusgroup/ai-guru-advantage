@@ -17,7 +17,7 @@ export const Founders = () => {
         "Operational Transformation"
       ],
       linkedin: "https://www.linkedin.com/in/chris-robinson-979940b/",
-      email: "chris@aigurusgroup.co"
+      email: "chris@aigurusgroup.com"
     },
     {
       name: "Geouffrey Erasmus",
@@ -31,7 +31,7 @@ export const Founders = () => {
         "Data Engineering & Analytics"
       ],
       linkedin: "#",
-      email: "geouffrey@aigurusgroup.co"
+      email: "geouffrey@aigurusgroup.com"
     }
   ];
 
