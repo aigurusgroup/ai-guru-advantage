@@ -9,7 +9,7 @@ export const Founders = () => {
       name: "Chris Robinson",
       title: "Founder & CEO",
       image: chrisRobinson,
-      bio: "Entrepreneur, founder, and investor with a track record of building, scaling, and exiting technology-driven businesses. With 11 successful ventures across software, AI, and customer-experience technology, including the 2025 merger of Creovai Inc with Capacity AI (USA), Chris combines deep operational expertise with cutting-edge AI innovation. At Creovai, he built award-winning conversational analytics and real-time guidance solutions that transformed customer engagement for enterprises worldwide.",
+      bio: "Entrepreneur, founder, and investor with a track record of building, scaling, and exiting technology-driven businesses. With 17 successful ventures across software, AI, and customer-experience technology, including the 2025 merger of Creovai Inc with Capacity AI (USA), Chris combines deep operational expertise with cutting-edge AI innovation. At Creovai, he built award-winning conversational analytics and real-time guidance solutions that transformed customer engagement for enterprises worldwide.",
       expertise: [
         "Technology Ventures & Exits",
         "AI & Automation Strategy",
@@ -17,7 +17,7 @@ export const Founders = () => {
         "Operational Transformation"
       ],
       linkedin: "https://www.linkedin.com/in/chris-robinson-979940b/",
-      email: "chris@aigurus.com"
+      email: "chris@aigurusgroup.co"
     },
     {
       name: "Geouffrey Erasmus",
@@ -31,7 +31,7 @@ export const Founders = () => {
         "Data Engineering & Analytics"
       ],
       linkedin: "#",
-      email: "geouffrey@creovai.com"
+      email: "geouffrey@aigurusgroup.co"
     }
   ];
 

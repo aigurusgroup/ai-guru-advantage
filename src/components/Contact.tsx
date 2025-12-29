@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Building } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -19,45 +19,37 @@ export const Contact = () => {
               <Button 
                 size="lg"
                 className="text-lg bg-primary-glow hover:bg-primary-glow/90"
-                onClick={() => window.location.href = 'mailto:info@aigurus.com'}
+                onClick={() => window.location.href = 'mailto:info@aigurusgroup.co'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Us
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="text-lg border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-              >
-                <Building className="mr-2 h-5 w-5" />
-                Investment Opportunities
               </Button>
             </div>
 
             <div className="pt-8 border-t border-border">
               <div className="grid sm:grid-cols-2 gap-6 text-left">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">For Investors</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Learn about our acquisition pipeline and investment opportunities
-                  </p>
-                  <a 
-                    href="mailto:investors@aigurus.com"
-                    className="text-sm text-primary-glow hover:underline inline-block mt-2 font-medium"
-                  >
-                    investors@aigurus.com
-                  </a>
-                </div>
-                <div>
                   <h3 className="font-semibold text-foreground mb-2">For Business Owners</h3>
                   <p className="text-sm text-muted-foreground">
                     Explore strategic partnerships and acquisition opportunities
                   </p>
                   <a 
-                    href="mailto:partnerships@aigurus.com"
+                    href="mailto:partnerships@aigurusgroup.co"
                     className="text-sm text-primary-glow hover:underline inline-block mt-2 font-medium"
                   >
-                    partnerships@aigurus.com
+                    partnerships@aigurusgroup.co
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">For Investors</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Learn about our acquisition pipeline and investment opportunities
+                  </p>
+                  <a 
+                    href="mailto:investors@aigurusgroup.co"
+                    className="text-sm text-primary-glow hover:underline inline-block mt-2 font-medium"
+                  >
+                    investors@aigurusgroup.co
                   </a>
                 </div>
               </div>
