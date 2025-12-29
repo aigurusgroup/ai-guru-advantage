@@ -20,10 +20,6 @@ export const WhyOwnersChoose = () => {
               <Award className="w-4 h-4" />
               Best Technology
             </span>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium">
-              <Award className="w-4 h-4" />
-              Best Place to Work
-            </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium">
               <Users className="w-4 h-4" />
               Investors in People

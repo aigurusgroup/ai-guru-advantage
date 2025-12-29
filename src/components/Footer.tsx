@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -18,28 +20,44 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <button 
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/#about"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/#services"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Services
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('founders')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/#founders"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Our Team
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/seller-faq"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Seller FAQ
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/how-it-works"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  How It Works
+                </Link>
               </li>
             </ul>
           </div>
