@@ -19,7 +19,7 @@ export const Contact = () => {
               <Button 
                 size="lg"
                 className="text-lg bg-primary-glow hover:bg-primary-glow/90"
-                onClick={() => window.location.href = 'mailto:info@aigurusgroup.co'}
+                onClick={() => window.location.href = 'mailto:info@aigurusgroup.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Us
@@ -34,10 +34,10 @@ export const Contact = () => {
                     Explore strategic partnerships and acquisition opportunities
                   </p>
                   <a 
-                    href="mailto:partnerships@aigurusgroup.co"
+                    href="mailto:partnerships@aigurusgroup.com"
                     className="text-sm text-primary-glow hover:underline inline-block mt-2 font-medium"
                   >
-                    partnerships@aigurusgroup.co
+                    partnerships@aigurusgroup.com
                   </a>
                 </div>
                 <div>
@@ -46,10 +46,10 @@ export const Contact = () => {
                     Learn about our acquisition pipeline and investment opportunities
                   </p>
                   <a 
-                    href="mailto:investors@aigurusgroup.co"
+                    href="mailto:investors@aigurusgroup.com"
                     className="text-sm text-primary-glow hover:underline inline-block mt-2 font-medium"
                   >
-                    investors@aigurusgroup.co
+                    investors@aigurusgroup.com
                   </a>
                 </div>
               </div>
