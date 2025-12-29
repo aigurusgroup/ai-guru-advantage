@@ -38,10 +38,20 @@ export const Hero = () => {
               Growth.
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-2xl leading-relaxed">
             Founder-led. Operator mindset. Confidential. Quick Decision.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
+          
+          {/* SEO-optimized headline */}
+          <div className="mt-12 pt-8 border-t border-primary/20">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
+              Sell your business. Protect the legacy. Build the next chapter.
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+              AI Gurus Group is a UK-based acquisition and transformation partner. We acquire established, profitable SMEs and strengthen them with AI, automation, modern operating systems and modern digital marketing — while protecting people, continuity and certainty.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 flex-wrap mt-10">
             <Button 
               size="lg" 
               className="text-lg group bg-primary-glow hover:bg-primary-glow/90"
