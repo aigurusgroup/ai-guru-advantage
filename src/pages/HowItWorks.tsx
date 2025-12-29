@@ -285,8 +285,8 @@ const HowItWorks = () => {
                             {/* Details list */}
                             <ul className="space-y-2 mb-4">
                               {step.details.map((detail, detailIndex) => (
-                                <li key={detailIndex} className="flex items-start gap-2 text-muted-foreground">
-                                  <span className="text-primary-glow mt-1.5">•</span>
+                                <li key={detailIndex} className="flex gap-2 text-muted-foreground">
+                                  <span className="text-primary-glow flex-shrink-0">•</span>
                                   <span>{detail}</span>
                                 </li>
                               ))}
