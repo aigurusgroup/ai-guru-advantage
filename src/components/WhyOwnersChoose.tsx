@@ -1,5 +1,6 @@
-import { Shield, Clock, Sparkles, Award, Users, CheckCircle } from "lucide-react";
+import { Shield, ArrowRight, CheckCircle, Award, Users, Phone, UserCheck, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export const WhyOwnersChoose = () => {
   return (
@@ -12,10 +13,16 @@ export const WhyOwnersChoose = () => {
               17+ Successful Deals
             </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium">
+              <Award className="w-4 h-4" />
               Customer Service Awards
             </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-glow/10 text-primary-glow font-medium">
+              <Award className="w-4 h-4" />
               Best Technology
+            </span>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium">
+              <Award className="w-4 h-4" />
+              Best Place to Work
             </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium">
               <Users className="w-4 h-4" />
@@ -23,15 +30,14 @@ export const WhyOwnersChoose = () => {
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            Why Owners Choose AI Gurus Group
+            Why AI Gurus Group
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            A great business deserves a great next chapter. Owners work with us when they want a fair deal, 
-            a smooth quick process, and a buyer who will invest in the business — not strip it.
+            Sellers work with us when they want a fair deal, a smooth quick process, and a buyer who will invest in the business.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="p-8 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
             <div className="w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
               <Shield className="w-8 h-8 text-white" />
@@ -55,15 +61,8 @@ export const WhyOwnersChoose = () => {
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <span className="font-semibold text-foreground">Fast clarity:</span>
-                  <span className="text-muted-foreground"> straightforward feedback and clear next steps.</span>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <span className="font-semibold text-foreground">Modern uplift:</span>
-                  <span className="text-muted-foreground"> AI + automation applied to real operations and the latest marketing practices.</span>
+                  <span className="font-semibold text-foreground">Tech uplift:</span>
+                  <span className="text-muted-foreground"> AI + automation applied to real operations.</span>
                 </div>
               </li>
             </ul>
@@ -71,55 +70,51 @@ export const WhyOwnersChoose = () => {
 
           <Card className="p-8 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
             <div className="w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center">
-              <Clock className="w-8 h-8 text-white" />
+              <ArrowRight className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">How It Works — Timeline</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">Next Steps</h3>
             <ol className="space-y-4">
-              {[
-                "Confidential introduction",
-                "High-level review & fit",
-                "Indicative offer & structure options",
-                "Focused due diligence",
-                "Completion",
-                "100-day plan: stabilise, improve, scale"
-              ].map((step, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                    {index + 1}
-                  </span>
-                  <span className="text-muted-foreground">{step}</span>
-                </li>
-              ))}
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  1
+                </span>
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-primary-glow" />
+                  <span className="text-muted-foreground">Meet and Talk — Phone</span>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  2
+                </span>
+                <div className="flex items-center gap-2">
+                  <UserCheck className="w-4 h-4 text-primary-glow" />
+                  <span className="text-muted-foreground">Face to Face — High-level review & fit</span>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  3
+                </span>
+                <div className="flex items-center gap-2">
+                  <FileText className="w-4 h-4 text-primary-glow" />
+                  <span className="text-muted-foreground">Indicative offer & structure options</span>
+                </div>
+              </li>
             </ol>
           </Card>
+        </div>
 
-          <Card className="p-8 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">What Happens After the Sale?</h3>
-            <p className="text-muted-foreground mb-6">
-              This is the reassurance most acquirers miss:
-            </p>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">Clear communication to staff</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">Founder transition plan (you choose the level)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">Investment in systems + training</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">Measurable improvements, not buzzwords</span>
-              </li>
-            </ul>
-          </Card>
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <Button 
+            size="lg" 
+            className="text-lg group bg-primary-glow hover:bg-primary-glow/90"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Let's Talk
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const WhatWeAcquire = () => {
   const businessCriteria = [
-    "Proven demand and trading history",
+    "Proven demand and established trading history",
     "Consistent profitability and healthy cash flow",
     "Strong reputation and loyal customers",
     "Repeat/recurring revenue or dependable demand"
@@ -17,31 +17,31 @@ export const WhatWeAcquire = () => {
   ];
 
   return (
-    <section id="what-we-acquire" className="py-24 bg-background">
+    <section id="what-we-acquire" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            What Businesses We Look For
+            What We Look For
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-            Thinking about selling your business?
+            If you're searching for "sell my business", exploring succession planning, or looking for a business acquisition company in the UK, you're in the right place.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            AI Gurus Group acquires established, profitable SMEs and strengthens them with practical AI, automation, and modern operating systems.
+            We're a long-term buyer with an operator mindset — focused on continuity, culture, and sustainable growth.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* The Kind of Business We Acquire */}
+          {/* We Acquire */}
           <Card className="p-8 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1 bg-card">
             <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary via-primary-glow to-accent flex items-center justify-center mb-6">
               <Search className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              The Kind of Business We Acquire
+              We Acquire
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              We're interested in SME acquisitions where the business has strong fundamentals and a willing seller. A great fit often includes:
+              We're interested in SME acquisitions where the business has strong fundamentals. A great fit often includes:
             </p>
             <ul className="space-y-3 mb-6">
               {businessCriteria.map((criterion) => (
