@@ -66,18 +66,18 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:info@aigurus.com" className="hover:text-primary transition-colors">
-                  info@aigurus.com
+                <a href="mailto:info@aigurusgroup.com" className="hover:text-primary transition-colors">
+                  info@aigurusgroup.com
                 </a>
               </li>
               <li>
-                <a href="mailto:investors@aigurus.com" className="hover:text-primary transition-colors">
-                  investors@aigurus.com
+                <a href="mailto:investors@aigurusgroup.com" className="hover:text-primary transition-colors">
+                  investors@aigurusgroup.com
                 </a>
               </li>
               <li>
-                <a href="mailto:partnerships@aigurus.com" className="hover:text-primary transition-colors">
-                  partnerships@aigurus.com
+                <a href="mailto:partnerships@aigurusgroup.com" className="hover:text-primary transition-colors">
+                  partnerships@aigurusgroup.com
                 </a>
               </li>
             </ul>
