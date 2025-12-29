@@ -43,7 +43,8 @@ export const Founders = () => {
             Our Founders
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Combining decades of experience in business acquisition and AI innovation
+            Founder-led acquisition. Operator-led transformation.<br />
+            We combine deal discipline with hands-on implementation — turning strong businesses into scalable, modern organisations.
           </p>
         </div>
 
