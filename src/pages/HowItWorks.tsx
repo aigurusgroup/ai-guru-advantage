@@ -5,9 +5,16 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, FileText, Handshake, CheckCircle2, Rocket, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+import { HowToSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const HowItWorks = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollToStep = (stepNumber: number) => {
     const element = document.getElementById(`step-${stepNumber}`);
@@ -33,7 +40,9 @@ const HowItWorks = () => {
   useEffect(() => {
     const handleScroll = () => {
       const steps = [1, 2, 3, 4, 5, 6];
-      const scrollPosition = window.scrollY + 200; // Offset for navigation
+      // Use responsive offset - smaller on mobile, larger on desktop
+      const offset = window.innerWidth < 768 ? 150 : 200;
+      const scrollPosition = window.scrollY + offset;
 
       for (let i = steps.length - 1; i >= 0; i--) {
         const stepElement = document.getElementById(`step-${steps[i]}`);
@@ -132,8 +141,31 @@ const HowItWorks = () => {
     }
   ];
 
+  // Prepare HowTo schema data
+  const howToSteps = steps.map((step) => ({
+    name: step.title,
+    text: `${step.description} ${step.details.join(' ')} ${step.note || ''}`.trim(),
+    position: step.number,
+  }));
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Business Acquisition Process | How It Works | AI Gurus Group"
+        description="Learn how AI Gurus Group's business acquisition process works. From confidential introduction to completion and the 100-day plan. A clear, staged process for UK business owners."
+        path="/how-it-works"
+      />
+      <HowToSchema
+        name="How to Sell Your Business to AI Gurus Group"
+        description="A clear, confidential process for business owners. From first call to completion and transition."
+        steps={howToSteps}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.aigurusgroup.com/" },
+          { name: "How It Works", url: "https://www.aigurusgroup.com/how-it-works" },
+        ]}
+      />
       <Navigation />
       <main>
         <section className="pt-32 pb-24 bg-background">
@@ -177,7 +209,7 @@ const HowItWorks = () => {
                           <button
                             key={step.number}
                             onClick={() => scrollToStep(step.number)}
-                            className={`group relative flex flex-col items-center p-4 rounded-lg transition-all duration-300 ${
+                            className={`group relative flex flex-col items-center p-3 md:p-4 rounded-lg transition-all duration-300 min-h-[140px] md:min-h-[160px] ${
                               activeStep === step.number
                                 ? 'bg-gradient-to-br from-primary via-primary-glow to-accent scale-105 shadow-lg'
                                 : 'bg-card hover:bg-primary/10 hover:scale-105 border-2 border-primary/20 hover:border-primary-glow'
@@ -205,13 +237,10 @@ const HowItWorks = () => {
                             </div>
                             
                             {/* Step title */}
-                            <h3 className={`text-xs md:text-sm font-semibold text-center mt-2 line-clamp-2 ${
+                            <h3 className={`text-xs md:text-sm font-semibold text-center mt-2 leading-tight ${
                               activeStep === step.number ? 'text-white' : 'text-foreground'
                             }`}>
-                              {step.title.split(' ').slice(0, 2).join(' ')}
-                              {step.title.split(' ').length > 2 && (
-                                <span className="block">{step.title.split(' ').slice(2).join(' ')}</span>
-                              )}
+                              {step.title}
                             </h3>
                             
                             {/* Duration if available */}
@@ -233,9 +262,6 @@ const HowItWorks = () => {
 
               {/* Detailed Timeline */}
               <div className="relative">
-                {/* Timeline line */}
-                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary-glow to-accent hidden md:block" />
-
                 {/* Steps */}
                 <div className="space-y-12">
                   {steps.map((step, index) => {
@@ -244,11 +270,8 @@ const HowItWorks = () => {
                     
                     return (
                       <div key={step.number} id={`step-${step.number}`} className="relative scroll-mt-24">
-                        {/* Timeline dot */}
-                        <div className="absolute left-6 md:left-8 w-4 h-4 rounded-full bg-gradient-to-br from-primary to-primary-glow border-4 border-background shadow-lg z-10 transform -translate-x-1/2" />
-
                         {/* Step content */}
-                        <Card className={`ml-12 md:ml-16 border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 ${isEven ? 'md:mr-0' : ''} ${
+                        <Card className={`border-2 border-primary/20 hover:border-primary-glow hover:shadow-[var(--shadow-medium)] transition-all duration-300 ${isEven ? 'md:mr-0' : ''} ${
                           activeStep === step.number ? 'ring-2 ring-primary-glow ring-offset-2' : ''
                         }`}>
                           <div className="p-6 md:p-8">

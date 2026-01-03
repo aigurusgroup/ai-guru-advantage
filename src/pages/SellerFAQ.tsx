@@ -9,6 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+import { FAQPageSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const SellerFAQ = () => {
   const faqs = [
@@ -64,6 +66,18 @@ const SellerFAQ = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Selling Your Business FAQ | AI Gurus Group"
+        description="Frequently asked questions about selling your business to AI Gurus Group. Learn about our confidential process, valuation methods, due diligence, and what happens after you sell your business."
+        path="/seller-faq"
+      />
+      <FAQPageSchema faqs={faqs} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.aigurusgroup.com/" },
+          { name: "Seller FAQ", url: "https://www.aigurusgroup.com/seller-faq" },
+        ]}
+      />
       <Navigation />
       <main>
         <section className="pt-32 pb-24 bg-background">

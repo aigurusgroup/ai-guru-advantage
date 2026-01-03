@@ -31,27 +31,47 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-24">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+        <div className="max-w-5xl">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
             Acquisition. Investment. Innovation.{" "}
             <span className="bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
               Growth.
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-2xl leading-relaxed">
-            Founder-led. Operator mindset. Confidential. Quick Decision.
-          </p>
           
-          {/* SEO-optimized headline */}
-          <div className="mt-12 pt-8 border-t border-primary/20">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
-              Sell your business. Protect the legacy. Build the next chapter.
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-              AI Gurus Group is a UK-based acquisition and transformation partner. We acquire established, profitable SMEs and strengthen them with AI, automation, modern operating systems and modern digital marketing — while protecting people, continuity and certainty.
+          {/* Three-part statement */}
+          <div className="mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
+              <div className="flex-1 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-primary/10 via-primary-glow/10 to-transparent border border-primary/20">
+                <p className="text-xl sm:text-2xl font-semibold text-foreground">
+                  Sell your business.
+                </p>
+              </div>
+              <div className="flex-1 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-primary-glow/10 via-accent/10 to-transparent border border-primary-glow/20">
+                <p className="text-xl sm:text-2xl font-semibold text-foreground">
+                  Protect the legacy.
+                </p>
+              </div>
+              <div className="flex-1 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-accent/10 via-primary/10 to-transparent border border-accent/20">
+                <p className="text-xl sm:text-2xl font-semibold text-foreground">
+                  Build the next chapter.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="mb-10">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl leading-relaxed">
+              AI Gurus Group is a UK-based acquisition and transformation partner. We acquire established, profitable SMEs and strengthen them with{" "}
+              <span className="font-semibold text-foreground">AI, automation, modern operating systems and modern digital marketing</span>
+              {" "}— while protecting{" "}
+              <span className="font-semibold text-foreground">people, continuity and certainty</span>.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 flex-wrap mt-10">
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
             <Button 
               size="lg" 
               className="text-lg group bg-primary-glow hover:bg-primary-glow/90"

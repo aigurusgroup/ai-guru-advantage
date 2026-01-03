@@ -9,6 +9,8 @@ import { WhatWeAcquire } from "@/components/WhatWeAcquire";
 import { Founders } from "@/components/Founders";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
+import { OrganizationSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Index = () => {
   const location = useLocation();
@@ -27,6 +29,17 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Sell Your Business UK | AI Gurus Group - Confidential Business Acquisition"
+        description="Sell your business confidentially in the UK. AI Gurus Group is a UK-based acquisition partner that acquires established SMEs and transforms them with AI, automation, and modern systems. Protect your legacy while building the next chapter."
+        path="/"
+      />
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.aigurusgroup.com/" },
+        ]}
+      />
       <Navigation />
       <main>
         <Hero />
